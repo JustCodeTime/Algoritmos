@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista(#1)exe1</title>
+</head>
+
+<body>
+    <h1> Informe 2 nota suas que exibiremos a média delas </h1>
+    Informe aqui sua primeira nota: <input type="text" id="nota1_inpt">
+    Informe aqui sua segunda nota: <input type="text" id="nota2_inpt">
+    <button onclick="média()">Sua média</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+
+<script>
+    function média() {
+
+        var nota1 = Number(nota1_inpt.value)
+        var nota2 = Number(nota2_inpt.value)
+
+        var total = (nota1 + nota2) / 2
+
+        msg.innerHTML = `A Média entre essas duas notas é: <b>${total}<b>`
+
+
+
+
+    }
+
+
+
+
+</script>

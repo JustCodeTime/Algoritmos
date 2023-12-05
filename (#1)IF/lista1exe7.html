@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista(#1)exe7</title>
+</head>
+
+<body>
+    Informe seu sálario <input type="text" name="" id="salario_ipt">
+    <button onclick="calcular()"></button>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var salario = Number(salario_ipt.value);
+        var faculdade = 1600;
+        var total = (salario - faculdade) / 30
+
+        if (total > 25 && total <= 30) {
+            msg.innerHTML = `#novogame`
+        } else if (total > 15 && total <= 20) {
+            msg.innerHTML = `#ragazzonosabado`
+
+        } else if (total > 20 && total < 25) {
+            msg.innerHTML = `#cinemanamorada`
+
+        }else if (total < 15){
+            msg.innerHTML = `#controletotal`
+
+        }else{
+            msg.innerHTML = `#tobonito`
+
+        }
+
+
+
+
+
+    }
+</script>

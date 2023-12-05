@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista(#1)exe2</title>
+</head>
+<body>
+    <h1>Vamo ver se você passou?</h1>
+    Informe sua primeira nota: <input type="text" id="nota1_inpt">
+    Informe sua segunda nota: <input type="text" id="nota2_inpt">
+    <button onclick="média()">E ai?</button>
+    <div id="msg"></div>
+</body>
+</html>
+<script>
+function média(){
+var nota1 = Number(nota1_inpt.value)
+var nota2 = Number(nota2_inpt.value)
+
+var total = (nota1 + nota2) / 2
+
+if(total < 5){
+msg.innerHTML = `Não foi dessa vez sua média foi:${total}` 
+
+
+}else {
+msg.innerHTML = `Parabéns você passou sua média foi de: ${total}` 
+
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+</script>
