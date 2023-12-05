@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- PROCURE AS INSTRUÇÕES ABAIXO DO SCRIPT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#7)exe1</title>
+</head>
+<body>
+    <h2>Qual temperatura atual</h2>
+    <input type="text" name="" id="temperatura_ipt">
+    <button onclick="validar()">Ver situação</button>
+</body>
+</html>
+
+<script>
+function validar(){
+var temperatura = Number(temperatura_ipt.value);
+
+if(temperatura >=21 && temperatura <= 24){
+
+    alert(`Temperatura confortável :)`)
+
+
+}else{
+    alert(`Temperatura desconfortável :(`)
+
+
+} 
+
+
+
+
+}
+
+
+
+
+</script>
+
+
+<!-- VAMOS VER O QUE NOSSO CÓDIGO NOS DIZ -->
+
+<!-- PASSO 1 NOSSO BODY 
+Corpo da página HTML.
+Um título de segundo nível (h2) perguntando pela temperatura atual.
+Um campo de entrada de texto (<input>) com o ID "temperatura_ipt".
+Um botão com o texto "Ver situação" que, quando clicado, chama a função validar(). --> 
+<!-- FIM DO PASSO 1 -->
+
+<!-- PASSO 2 NOSSO JAVA SCRIPT -->
+<!-- Um script JavaScript incorporado.
+A função validar() é definida.
+Obtém o valor do campo de entrada de temperatura como um número.
+Verifica se a temperatura está entre 21 e 24.
+Exibe um alerta indicando se a temperatura é confortável ou desconfortável.
+Quando o botão "Ver situação" é clicado, a função validar() é chamada, e um alerta é exibido com base na faixa de temperatura fornecida pelo usuário. Se a temperatura estiver entre 21 e 24, o alerta será "Temperatura confortável :)", caso contrário, será "Temperatura desconfortável :(". -->
+
+<!-- FIM DO PASSO 2 -->

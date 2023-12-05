@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#6)exe8</title>
+</head>
+
+<body>
+    <h2>Quantos pães franceses você come</h2>
+    <input type="text" name="" id="paes_franceses_ipt">
+    <h2>Quantos pacotes de bolacha você come</h2>
+    <input type="text" name="" id="pacotes_ipt">
+    <h2>Quantos copos de achocolatados você toma </h2>
+    <input type="text" name="" id="achocolatado_ipt">
+    <button onclick="calcular()">verificar calorias</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+
+<script>
+    function calcular() {
+        var pao = Number(paes_franceses_ipt.value) * 50
+        var bolacha = Number(pacotes_ipt.value) * 80
+        var achocolatado = Number(achocolatado_ipt.value) * 70
+
+        var total = pao + bolacha + achocolatado
+
+
+        if(total < 200){
+            msg.innerHTML = `Parabéns, vai ficar em forma !` 
+        }else if (total <=400){
+            msg.innerHTML = `Cuidado, vai ficar menos saudável !` 
+        }else {
+            msg.innerHTML = `Alerta crítico de saúde !!!` 
+        }
+        
+
+
+    }
+
+
+
+
+</script>

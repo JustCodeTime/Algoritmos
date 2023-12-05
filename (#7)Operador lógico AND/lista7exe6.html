@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#7)exe6</title>
+</head>
+
+<body>
+    <h2>Insira sua nota</h2>
+    <input type="text" name="" id="nota_ipt">
+    <h2>Insira sua frequência</h2>
+    <input type="text" name="" id="frequencia_ipt">
+    <button onclick="validar()">Avaliar aluno</button>
+
+</body>
+
+</html>
+
+<script>
+    function validar() {
+        var nota = Number(nota_ipt.value)
+        var frequencia = Number(frequencia_ipt.value)
+
+            if(nota < 6 && frequencia < 75){
+                alert("Infelizmente, não foi desta vez")
+            }else{
+
+                alert("Parabéns! Aprovado!")
+            }
+
+
+
+
+
+    }
+
+
+
+
+
+
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#6)exe6</title>
+</head>
+
+<body>
+    <h2>Qual seu time</h2>
+    <input type="text" name="" id="time_ipt">
+    <button onclick="validar()">Fala sobre seu time</button>
+    <div id="timao" style=" color: white;background-color: black;"></div>
+    <div id="porcada" style="color: white;background-color: green;"></div>
+    <div id="sereia" style="color: black;background-color:white;"></div>
+    <div id="po_arroz" style="color: red;background-color: black;"></div>
+</body>
+
+</html>
+<script>
+    function validar() {
+        var time = time_ipt.value
+
+        if (time == "Corinthians") {
+            timao.innerHTML = `Salve o ${time}`
+        } else if (time == "Palmeiras") {
+            porcada.innerHTML = `Salve o alviverde imponente`
+        } else if (time == "Santos") {
+            sereia.innerHTML = `Agora quem dá a bola é o Santos`
+        } else if (time == "São Paulo"){
+            po_arroz.innerHTML  = `Salve o Tricolor paulista`
+        }
+
+
+
+    }
+
+
+
+</script>

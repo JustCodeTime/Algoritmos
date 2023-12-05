@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#6)exe3</title>
+</head>
+
+<body>
+    <h2>Inserir a temperatura</h2>
+    <input type="text" name="" id="temperatura_ipt">
+    <button onclick="calcular()">Sensação térmica</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+
+<script>
+    function calcular() {
+        var temperatura = Number(temperatura_ipt.value)
+
+        if (temperatura < 14) {
+            msg.innerHTML = `Congelante`
+        } else if (temperatura >= 14) {
+            msg.innerHTML = `Com Frio`
+        } else if (temperatura >= 21) {
+            msg.innerHTML = `Confortável`
+
+        } else if (temperatura >= 24) {
+            msg.innerHTML = `Com calor`
+
+        } else {
+            msg.innerHTML = ` Calor escaldante`
+        }
+
+
+
+
+
+    }
+
+
+
+</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#7)exe9</title>
+</head>
+<body>
+    <h2>Altura incial</h2>
+    <input type="text" name="" id="altura_inicial_ipt">
+    <h2>Altura final</h2>
+    <input type="text" name="" id="altura_final_ipt">
+    <h2>Nome do candidato</h2>
+    <input type="text" name="" id="nome_ipt">
+    <h2>Altura do Candidato</h2>
+    <input type="text" name="" id="altura_do_candidato_ipt">
+    <button onclick="validar()">Canidatar-se</button>
+    <div id="msg"></div>
+</body>
+</html>
+
+<script>
+function validar(){
+var alturaInical = Number(altura_inicial_ipt.value);
+var alturaFinal = Number(altura_final_ipt.value);
+var nome = nome_ipt.value
+var alturaCandidato = Number(altura_do_candidato_ipt.value)
+msg.innerHTML = ""
+if(alturaInical > 1 && alturaFinal > alturaInical){
+    if(alturaCandidato >= alturaInical && alturaCandidato <= alturaFinal){
+        msg.innerHTML = `O candidato ${nome} com altura de ${alturaCandidato} participará do processo de seleção de piloto` 
+    }else{
+        msg.innerHTML += `O candidato ${nome} com altura de ${alturaCandidato}  não atende os requisitos` 
+    }
+}else{
+    alert("Há um erro na formulação do processo a Altura final tem que ser mario que a altura incial e a altura inicial tem que ser maior que 1")
+}
+
+
+}
+
+
+
+
+</script>

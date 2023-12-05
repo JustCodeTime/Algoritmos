@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#6)exe2</title>
+</head>
+
+<body>
+    <h2>Qual a renda familiar mensal</h2>
+    <input type="text" name="" id="renda_familiar_ipt">
+    <button onclick="calcular()">Analisar Renda</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var renda = Number(renda_familiar_ipt.value)
+
+        if (renda <= 250) {
+            msg.innerHTML = `Classe E`
+        } else if (renda <= 900) {
+            msg.innerHTML = `Classe D`
+
+        } else if (renda <= 2500) {
+            msg.innerHTML = `Classe C`
+
+        } else if (renda <= 9500) {
+            msg.innerHTML = `Classe B`
+
+        } else {
+            msg.innerHTML = `Classe A`
+        }
+
+
+    }
+</script>

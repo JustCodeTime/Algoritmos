@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#6)exe4</title>
+</head>
+
+<body>
+    <h2>Qual peso da criança</h2>
+    <input type="text" name="" id="peso_crianca_ipt">
+    <button onclick="calcular()">Ver peso</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var peso = Number(peso_crianca_ipt.value)
+        if (peso <= 13.5) {
+            msg.innerHTML = `Abaixo do peso`
+        } else if (peso >= 21.2) {
+            msg.innerHTML = `Acima do peso`
+        } else if (peso >= 13.5) {
+            if (peso <= 21.2) {
+                msg.innerHTML = `Peso na média `
+            }
+        } else if (peso == 18.3) {
+            msg.innerHTML = `Peso perfeito`
+
+        }
+
+
+
+    }
+
+
+
+
+
+</script>

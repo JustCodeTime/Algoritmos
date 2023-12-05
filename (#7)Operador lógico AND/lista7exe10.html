@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#7)exe10</title>
+</head>
+
+<body>
+    <h2>Sua idade</h2>
+    <input type="text" name="" id="idade_ipt">
+    <h2>Seu salário</h2>
+    <input type="text" name="" id="salario_ipt">
+    <button onclick="validar()">Analisar situação</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+
+<script>
+    function validar() {
+        var idade = Number(idade_ipt.value);
+        var salario = Number(salario_ipt.value);
+
+        if (idade < 18 && salario < 2500) {
+            msg.innerHTML = `Menor de idade e liso`
+        } else if (idade < 18 && salario >= 2500) {
+            msg.innerHTML = `Menor de idade e ostentação`
+        } else if (idade >= 18 && salario < 3500) {
+            msg.innerHTML = `Maior de idade e liso`
+        } else if (idade >= 18 && salario >= 3500 && salario <= 7000) {
+            msg.innerHTML = `Maior de idade e ostentação`
+        }else{
+            msg.innerHTML = `Maior de idade e mega ostentação`
+        }
+
+
+
+
+    }
+
+
+
+
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#7)exe8</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <input type="text" name="" id="login_ipt">
+    <h2>Senha</h2>
+    <input type="password" name="" id="senha_ipt">
+    <h2>Código de segurança</h2>
+    <input type="password" name="" id="codigo_de_seguranca_ipt">
+    <button onclick="validar()">ENTRAR</button>
+
+
+
+</body>
+</html>
+
+<script>
+function validar() {
+        var login = login_ipt.value
+        var senha = senha_ipt.value
+        var codigo = Number(codigo_de_seguranca_ipt.value)
+
+        if (login == "SPTech" && senha == "digital" && codigo == "123") {
+            alert("Usuário autenticado com sucesso")
+
+        } else {
+
+            alert("Falha na autenticação")
+        }
+    }
+
+
+
+
+</script>

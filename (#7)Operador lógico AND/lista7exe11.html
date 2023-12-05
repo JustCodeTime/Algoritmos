@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#7)exe11</title>
+</head>
+
+<body>
+    <h2>Quantas passagens irá comprar</h2>
+    <input type="text" name="" id="passagem_comprar_ipt">
+    <button onclick="validar()">Comprar</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function validar() {
+        var compra = Number(passagem_comprar_ipt.value)
+
+        if (compra >= 8 && compra <= 50) {
+
+
+            if (compra >= 8 && compra <= 19) {
+
+                compra = compra * 4.40
+                console.log(compra)
+                var desconto = compra * 0.97
+                msg.innerHTML = `sua compra ficou no valor de R${desconto}`
+            } else if (compra >= 20 && compra <= 49) {
+                compra = compra * 4.40
+                var desconto = compra * 0.95
+                msg.innerHTML = `sua compra ficou no valor de R${desconto}`
+
+
+            } else if (compra == 50) {
+                compra = compra * 4.4
+                var desconto = compra * 0.93
+                msg.innerHTML = `sua compra ficou no valor de R${desconto}`
+            }
+
+
+        }else {
+            alert("Quantidade inválida para o Fidelidade!")
+        }
+
+    }
+
+
+
+
+</script>

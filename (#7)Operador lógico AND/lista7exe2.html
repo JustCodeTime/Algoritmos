@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#7)exe2</title>
+</head>
+
+<body>
+    <h2>Insira a sua renda</h2>
+    <input type="text" name="" id="renda_usuario_ipt">
+    <h2>Insira sua renda familiar</h2>
+    <input type="text" name="" id="renda_familiar_ipt">
+    <button onclick="validar()">Verificar ajuda</button>
+    <div id="msg"></div>
+
+</body>
+
+</html>
+
+<script>
+function validar(){
+var rendaUsuario = Number(renda_usuario_ipt.value);
+var rendaFamiliar = Number(renda_familiar_ipt.value);
+
+if(rendaUsuario <= 1050 && rendaFamiliar  <=2100){
+
+    msg.innerHTML = `Você terá direito!` 
+}else{
+    msg.innerHTML = `Você NÃO terá direito` 
+
+}
+
+
+
+
+
+
+}
+
+
+
+</script>

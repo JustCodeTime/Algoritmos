@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#6)exe7</title>
+</head>
+
+<body>
+    <h2>Qual valor você tem economizado</h2>
+    <input type="text" name="" id="poder_de_compra_ipt">
+    <button onclick="calcular()">Poder de compra</button>
+    <div id="msg"></div>
+
+</body>
+
+</html>
+
+<script>
+    msg.innerHTML = ""
+    function calcular() {
+        var dinheiro = Number(poder_de_compra_ipt.value)
+        if (dinheiro <= 0) {
+            msg.innerHTML = `Nada de compras triste `
+        } else if (dinheiro < 100) {
+            msg.innerHTML += `Viajem de ida e volta pra Praia Grande`
+        } else if (dinheiro < 4000) {
+
+            msg.innerHTML += `Uma boa moto usada`
+
+        } else if (dinheiro >= 4000) {
+            msg.innerHTML += `Mais alguma bobagem legal `
+        }
+
+
+
+
+
+    }
+
+
+
+</script>

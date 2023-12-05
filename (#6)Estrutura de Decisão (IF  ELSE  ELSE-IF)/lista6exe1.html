@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ABAIXO DO SCRIPT DO PRIMEIRO EXERCÍCIO SEMPRE TERÁ UMA EXPLICAÇÃO -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#6)exe1</title>
+</head>
+
+<body>
+    <h2>Insira sua altura</h2>
+    <input type="text" name="" id="altura_ipt">
+    <button onclick="validar()">Analisar Estrutura</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function validar() {
+        var altura = Number(altura_ipt.value)
+
+        if (altura <= 1.65) {
+            msg.innerHTML = `Você pode ser piloto de corrida`
+        } else if (altura <= 1.80) {
+            msg.innerHTML = `Você pode ser jogador de futebol`
+
+        } else {
+            msg.innerHTML = `Você pode ser jogador de vôlei ou basquete`
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+</script>
+
+<!-- O QUE ESSE CÓDIGO ESTÁ NOS DIZENDO?... -->
+
+<!-- PASSO 1 O NOSSO BODY -->
+
+<!-- <h2>Insira sua altura</h2>: Um título de nível 2 que informa ao usuário para inserir sua altura. -->
+
+<!-- <input type="text" name="" id="altura_ipt">: Um campo de entrada que permite ao usuário digitar sua altura. O id="altura_ipt" serve como identificador único para esse campo, facilitando sua referência em JavaScript. -->
+
+<!-- <div id="msg"></div>: Uma <div> que serve como contêiner para exibir mensagens. O id="msg" é um identificador único que será usado para manipular o conteúdo desta <div> no JavaScript. -->
+
+<!-- FIM DO PASSO 1 -->
+
+<!-- PASSO 2 NOSSO JAVASCRIPT -->
+
+<!-- Função: Declaração da função chamada validar(), que será executada quando o botão for clicado. -->
+
+<!-- Obtém o valor do campo de entrada de altura (altura_ipt), converte para um número usando Number() e armazena na variável altura. -->
+
+<!-- FIM DO PASSO 2 -->
+
+<!-- PASSO 3 NOSSA ESTRUTURA DE DECISÃO  -->
+
+<!-- Utiliza estruturas condicionais para verificar a altura inserida e exibir mensagens diferentes com base nessa altura.
+
+Se a altura for menor ou igual a 1.65, exibe a mensagem "Você pode ser piloto de corrida".
+
+Se a altura estiver entre 1.65 e 1.80, exibe a mensagem "Você pode ser jogador de futebol".
+
+Se a altura for maior que 1.80, exibe a mensagem "Você pode ser jogador de vôlei ou basquete". -->
