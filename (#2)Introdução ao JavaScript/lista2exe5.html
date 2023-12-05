@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#2)exe5</title>
+</head>
+
+<body>
+    <h2>Qual sua idade</h2>
+    <input type="text" name="" id="idade_ipt">
+    <button onclick="calcular()">Aposentadoria Homem</button>
+    <button onclick="calcular2()">Aposentadoria Mulher</button>
+</body>
+
+</html>
+
+<script>
+    function calcular() {
+        var idade = Number(idade_ipt.value)
+        alert(`ainda faltam ${70 - idade }`)
+        console.log(idade)
+    }
+
+    function calcular2() {
+        var idade = Number(idade_ipt.value)
+        alert(`ainda faltam ${60 - idade }`)
+
+
+    }
+</script>

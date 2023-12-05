@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#2)exe4</title>
+</head>
+<body>
+    <h2>Insira o nome da rua, avenida ou vila </h2>
+    <input type="text" name="" id="casa_ipt">
+    <h2>Insira o número da sua casa</h2>
+    <input type="text" name="" id="nmr_ipt">
+    <button onclick="home()">Onde eu moro</button>
+    <br> <br><div id="msg"></div>
+</body>
+</html>
+<script>
+function home(){
+var casa  = casa_ipt.value
+var numero = Number(nmr_ipt.value)
+msg.innerHTML = "";
+
+
+msg.innerHTML = `Seu logradouro é ${casa} <br>` 
+
+msg.innerHTML += `O número do seu logradoru é ${numero}`
+
+}
+
+
+
+</script>

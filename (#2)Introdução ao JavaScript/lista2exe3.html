@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#2)exe3</title>
+</head>
+
+<body>
+    <h2>Qual seu time?</h2>
+    <input type="text" name="" id="time_ipt">
+    <h2>Quantos Mundias seu time ganhou?</h2>
+    <input type="text" name="" id="titulo_ipt">
+    <button onclick="time()">Amo meu time</button>
+</body>
+
+</html>
+<script>
+function time(){
+var time = time_ipt.value
+var titulo = Number(titulo_ipt.value)
+
+if(time == "Palmeiras" || time == "palmeiras" || time == "Sociedade esportiva Palmeiras" && titulo > 0){
+
+    alert(`Para com suas mentiras a porcada não tem mundial`)
+} else{
+    alert(`O time ${time} tem ${titulo} mundias da FIFA`)
+}
+
+
+
+
+
+}
+
+
+</script>
+

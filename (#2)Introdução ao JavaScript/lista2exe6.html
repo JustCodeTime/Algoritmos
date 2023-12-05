@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#2)exe6</title>
+</head>
+
+<body>
+    <h2>Qual valor da pizza?</h2>
+    <input type="text" name="" id="valor_ipt">
+    <h2>Quantos amigos?</h2>
+    <input type="text" name="" id="amigos_ipt">
+    <button onclick="calcular()">#LovePizza</button>
+
+</body>
+
+</html>
+
+<script>
+    function calcular() {
+        var valor = Number(valor_ipt.value)
+        var amigo = Number(amigos_ipt.value)
+        var total = valor / amigo
+
+        alert(`Cada um dos ${amigo} amigos vai pagar ${total}R$`)
+
+
+
+
+    }
+
+
+</script>

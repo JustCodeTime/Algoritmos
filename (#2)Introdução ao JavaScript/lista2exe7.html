@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#2)exe7</title>
+</head>
+
+<body>
+    <h2>Qual valor da passagem?</h2>
+    <input type="text" name="" id="valor_ipt">
+    <h2>Quantas viagens fará aos mês?</h2>
+    <input type="text" name="" id="qtdViagem_ipt">
+    <button onclick="economia()">Ver economia</button>
+</body>
+
+</html>
+<script>
+    function economia() {
+        var valor = Number(valor_ipt.value);
+        var qtdViagem = Number(qtdViagem_ipt.value)
+        var estudante = valor / 2
+        var total = estudante * qtdViagem
+
+        alert(`Você economizará ${total} R$ `)
+
+
+
+    }
+
+
+
+</script>

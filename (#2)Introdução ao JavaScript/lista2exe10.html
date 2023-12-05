@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#2)exe10</title>
+</head>
+
+<body>
+    <h1>Vamos somar</h1>
+    <h2>Insira aqui o primeiro número da equação</h2>
+    <input type="text" name="" id="nmr1_ipt">
+    <h2>Insira aqui o segundo número da equação</h2>
+    <input type="text" name="" id="nmr2_ipt">
+    <h1>Qual operação aritimética você deseja realizar?</h1>
+    <button onclick="soma()">Soma</button>
+    <button onclick="subtracao()">Diferença</button>
+    <button onclick="multiplicacao()">Produto</button>
+    <button onclick="divisao()">Razão</button>
+    <div id="msg"></div>
+
+
+</body>
+
+</html>
+
+<script>
+    msg.innerHTML = "";
+    function soma() {
+        var nmr1 = Number(nmr1_ipt.value)
+        var nmr2 = Number(nmr2_ipt.value)
+        var total = (nmr1 + nmr2)
+
+        msg.innerHTML  = ` <br <br> <br>${nmr1} + ${nmr2} = ${total} <br> <br>` 
+
+    }
+    function subtracao() {
+        var nmr1 = Number(nmr1_ipt.value)
+        var nmr2 = Number(nmr2_ipt.value)
+        var total = (nmr1 - nmr2)
+             msg.innerHTML  += `${nmr1} - ${nmr2} = ${total}  <br> <br> ` 
+    }
+
+
+    function multiplicacao() {
+        var nmr1 = Number(nmr1_ipt.value)
+        var nmr2 = Number(nmr2_ipt.value)
+        var total = (nmr1 * nmr2)
+        msg.innerHTML += `${nmr1} X ${nmr2} = ${total}  <br> <br>` 
+
+    }
+
+    function divisao() {
+
+        var nmr1 = Number(nmr1_ipt.value)
+        var nmr2 = Number(nmr2_ipt.value)
+        var total = (nmr1 / nmr2)
+        msg.innerHTML += `${nmr1} : ${nmr2} = ${total}  <br> <br>` 
+
+    }
+
+
+
+</script>

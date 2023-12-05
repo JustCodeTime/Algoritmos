@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#2)exe9</title>
+</head>
+
+<body>
+    <h2>Insira sua nota na avaliação continuada</h2>
+    <input type="text" name="" id="continuada_ipt">
+    <h2>Insira sua nota na avaliação semestral</h2>
+    <input type="text" name="" id="semestral_ipt">
+    <h2>Insira aqui seu nome</h2>
+    <input type="text" name="" id="nome_ipt">
+    <button onclick="calcular()">Calcule sua média</button>
+    
+</body>
+
+</html>
+
+<script>
+function calcular(){
+var continuada = Number(continuada_ipt.value)
+var semestral = Number(semestral_ipt.value)
+var nome = nome_ipt.value
+
+var total = (continuada * 0.6) + (semestral * 0.4)
+
+alert(`A média de ${nome} será de ${total}`)
+
+
+}
+
+
+
+
+
+</script>
+
+<!-- (continuada * 0.4) + (semestral * 0.6) -->

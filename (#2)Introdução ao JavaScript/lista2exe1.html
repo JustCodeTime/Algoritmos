@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#2)exe1</title>
+</head>
+
+<body>
+    <h2>Insira sua cidade natal </h2>
+    <input type="text" name="" id="cnatal_ipt">
+    <h2>Ano de Nascimento</h2>
+    <input type="text" name="" id="nascimento_ipt">
+    <br> <br> <br> <button onclick="cadastrar()">Cadastrar</button> <br> <br>
+</body>
+
+</html>
+<script>
+    function cadastrar() {
+        var cidade = cnatal_ipt.value
+        var nasc = Number(nascimento_ipt.value)
+        var idade = (nasc - 2023) * -1
+
+        alert(`Você nasceu na cidade de ${cidade} no ano de ${nasc} e tem por volta de ${idade} anos `)
+
+
+
+    }
+
+
+
+
+</script>
