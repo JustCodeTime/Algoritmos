@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#3)exe6</title>
+</head>
+
+<body>
+    <h2>Qual seu ki base</h2>
+    <input type="text" name="" id="ki_ipt">
+    <button onclick="ssj()">SSJ</button>
+    <button onclick="ssj2()">SSJ2</button>
+    <button onclick="ssj3()">SSJ3</button>
+
+
+    <div id="msg"></div>
+</body>
+
+</html>
+
+<script>
+    msg.innerHTML = ""
+    function ssj() {
+        var ki = Number(ki_ipt.value)
+        msg.innerHTML = `<br>Seu ki ${ki * 50}`
+    }
+
+
+    function ssj2() {
+        var ki = Number(ki_ipt.value)
+        msg.innerHTML += `<br>Seu ki ${ki * 100}`
+
+    }
+    function ssj3() {
+
+        var ki = Number(ki_ipt.value)
+        msg.innerHTML += `<br>Seu ki ${ki * 200}`
+
+
+
+    }
+
+
+
+
+</script>

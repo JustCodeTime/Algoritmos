@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#3)exe3</title>
+</head>
+
+<body>
+    <h2>Insira um número ao qual você deseja saber a tabuada</h2>
+    <input type="text" name="" id="tabuada_ipt">
+    <button onclick="tabuada()">Ver Tabuada</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+
+
+<script>
+function tabuada(){
+var tabuada = Number(tabuada_ipt.value)
+msg.innerHTML = `${tabuada} X 1 = ${tabuada * 1} <br>${tabuada} X 2 = ${tabuada * 2} <br>${tabuada} X 3 = ${tabuada * 3} <br>${tabuada} X 4 = ${tabuada * 4} <br>${tabuada} X 5 = ${tabuada * 5} <br>${tabuada} X 6 = ${tabuada * 6} <br>${tabuada} X 7 = ${tabuada * 7} <br>${tabuada} X 8 = ${tabuada * 8} <br>${tabuada} X 9 = ${tabuada * 9} <br> ${tabuada} X 10 = ${tabuada * 10} <br> <br>`
+
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<!-- <script> TESTE COM WHILE
+    function tabuadas() {
+        var tabuada = Number(tabuada_ipt.value);
+        contador = 1;
+        msg.innerHTML = ""
+            while(contador <= 10 ){
+               
+                var Resultado = contador * tabuada
+                 contador += 1;
+               msg.innerHTML += `${Resultado} <br>` 
+              
+            }  
+      
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+</script> -->

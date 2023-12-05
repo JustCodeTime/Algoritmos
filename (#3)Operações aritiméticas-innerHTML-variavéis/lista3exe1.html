@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#3)exe1</title>
+</head>
+
+<body>
+    <h2>Quantas horas você tem dormido?</h2>
+    <input type="text" name="" id="sono_ipt">
+    <button onclick="calcular()">Calcular sono</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var sono = Number(sono_ipt.value)
+        var fase1 = 0.05 * sono
+        var fase2 = 0.45 * sono
+        var fase3 = 0.30 * sono
+        var rem = 0.20 * sono
+        msg.innerHTML = `<br> <br> ${fase1} horas na fase 1 <br> ${fase2} horas na fase 2 <br> ${fase3} horas na fase 3 <br> ${rem} horas na fase REM <br> `
+
+
+
+
+
+}
+
+
+
+</script>
+
+
+<!-- 5% na primeira fase
+
+45% na segunda fase
+
+
+30% na terceira fase
+
+
+20% fase rem -->

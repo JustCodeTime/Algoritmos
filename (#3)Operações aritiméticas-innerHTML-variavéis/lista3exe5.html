@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#3)exe5</title>
+</head>
+
+<body>
+    <h2>Qual o valor da passagem de ônibus</h2>
+    <input type="text" name="" id="passagem_ipt">
+    <h2>Quantas viagens você faz por mês</h2>
+    <input type="text" name="" id="qtdViagens_ipt">
+    <h2>Qual a distância do trabalho</h2>
+    <input type="text" name="" id="distanciaTrabalho_ipt">
+    <button onclick="calcular()">Calcular VT</button>
+    <div id="msg"></div>
+
+
+</body>
+
+</html>
+
+
+<script>
+    function calcular() {
+
+        var valor = Number(passagem_ipt.value)
+        var qtdViagem = Number(qtdViagens_ipt.value)
+        var distancia = Number(distanciaTrabalho_ipt.value)
+
+        var uber = (qtdViagem * 0.10) * distancia
+        var total = (valor * qtdViagem) + uber
+
+        msg.innerHTML = `<br> <br> Você vai gastar R$${total} por mês com transporte`
+
+
+}
+</script>
+
+
+ <!-- pegar o 10% do total de viagens e multiplicar pela distancia dele do trabalho até a casa -->

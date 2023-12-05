@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#3)exe2</title>
+</head>
+
+<body>
+    <h2>Insira aqui a quantidade de votos que o Canditado A teve na eleição</h2>
+    <input type="text" name="" id="votosA_ipt">
+    <h2>Insira aqui a quantidade de votos que o Canditado b teve na eleição</h2>
+    <input type="text" name="" id="votosB_ipt">
+    <h2>Insira aqui a quantidade de brancos que houveram na eleição</h2>
+    <input type="text" name="" id="votosBrancos_ipt">
+    <h2>Insira aqui a quantidade de votos nulos que houveram na eleição</h2>
+    <input type="text" name="" id="votosNulos_ipt">
+
+    <button onclick="calcular()">Resultado da Eleição</button>
+
+    <div id="msg"></div>
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var votosA = Number(votosA_ipt.value)
+        var votosB = Number(votosB_ipt.value)
+        var branco = Number(votosBrancos_ipt.value)
+        var nulo = Number(votosNulos_ipt.value)
+        var somatoria  = votosA + votosB + branco + nulo
+
+
+        var candidatoA = 0.40 * somatoria
+        var candidatoB = 0.35 * somatoria
+        var invalidos  = 0.25 * somatoria
+
+        msg.innerHTML = `<br> <br> <h1> <b>Total de votos: ${somatoria} </b> </h1> Candidato A : 40% (${candidatoA}) votos <br> Candidato B : 35% (${candidatoB}) votos <br> Inválidos : 25% (${invalidos}) votos <br> `
+
+
+
+
+
+    }
+
+
+
+</script>
+
+
+
+
+
+
+
+
+<!-- 
+valor do candidato a * 0.4
+valor do candidato b * 0.35
+valor invalido = valor branco  + nulo / 100 -->
