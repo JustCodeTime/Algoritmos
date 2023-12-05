@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#4)exe6</title>
+</head>
+
+<body>
+    <h2>Insira sua renda familiar</h2>
+    <input type="text" name="" id="renda_ipt">
+    <h2>Valor da prestação</h2>
+    <input type="text" name="" id="prestacao_ipt">
+    <button onclick="calcular()">Verificar financiamento</button>
+    <div id="msg"></div>
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var renda = Number(renda_ipt.value)
+        var prestacao = Number(prestacao_ipt.value)
+        var total = (prestacao / renda) * 100
+
+        msg.innerHTML = `A prestação corresponde a ${total}% da renda familiar`
+
+        if (total > 30) {
+
+            msg.innerHTML = `  <b style="color: red;">Será necessário complementar a renda familiar</b>`
+
+        }
+    }
+
+
+
+
+</script>

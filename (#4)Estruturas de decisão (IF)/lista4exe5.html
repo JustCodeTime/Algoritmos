@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#4)exe5</title>
+</head>
+
+<body>
+    <h2>Quantidade de KHW você consome por mês</h2>
+    <input type="text" name="" id="consumo_ipt">
+    <button onclick="calcular()">Calcular conta de luz</button>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var consumo = Number(consumo_ipt.value)
+        var total = consumo * 0.85
+        var desconto = total * 0.9
+      
+        if (consumo < 100) {
+            alert(`Você recebeu desconto de 10% então pagará ${desconto}`)
+        } if(consumo >= 100){
+               alert(`Você pagará ${total}`)
+        }
+ 
+
+    }
+
+
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#4)exe9</title>
+</head>
+
+<body>
+    <h2>Qual a última série que você viu</h2>
+    <input type="text" name="" id="ultima_serie_ipt">
+    <h2>Quantos episódios você assitiu</h2>
+    <input type="text" name="" id="epsodios_ipt">
+    <button onclick="calcular()">Verficial nível</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var nome = ultima_serie_ipt.value
+        var ep = Number(epsodios_ipt.value) * 22
+
+        msg.innerHTML = `Vejo que você gosta da série ${nome}`
+        if (ep > 1800) {
+            msg.innerHTML = `Uau, você realmente gosta dessa série!`
+
+
+
+
+        }
+
+
+
+
+
+    }
+
+
+</script>

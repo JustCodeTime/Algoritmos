@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#4)exe10</title>
+</head>
+
+<body>
+    <h2>Saldo na conta</h2>
+    <input type="text" name="" id="saldo_conta_ipt">
+    <button onclick="calcular()">Verificar finanças</button>
+    <div id="msg"></div>
+    <b style="color: red;"></b>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var saldo = Number(saldo_conta_ipt.value)
+
+        if(saldo == 0) {
+            msg.innerHTML = `Conta zerada`
+        } if(saldo < 0){
+            msg.innerHTML = `<b style = "color:red;">Está devendo! </b>  `
+        } if(saldo > 0) {
+            msg.innerHTML = `<b style = "color:blue;">Saldo positivo! sorriso </b> `
+        }
+    }
+
+
+</script>

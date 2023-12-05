@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#4)exe13</title>
+</head>
+
+<body>
+    <h2>Insira a sua primeira nota</h2>
+    <input type="text" name="" id="nota1_ipt">
+    <h2>Insira a sua segunda nota</h2>
+    <input type="text" name="" id="nota2_ipt">
+    <button onclick="calcular()">Ver situação</button>
+    <div id="msg"></div>
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var nota1 = Number(nota1_ipt.value)
+        var nota2 = Number(nota2_ipt.value)
+
+        var total = (nota1 + nota2) / 2
+
+        if (total < 6) {
+            alert("Tente outra vez...")
+        } if (total >= 6) {
+            alert("Parabéns, aprovado!")
+        }
+
+
+
+
+    }
+
+
+</script>

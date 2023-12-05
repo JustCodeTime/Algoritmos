@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#4)exe13</title>
+</head>
+
+<body>
+    <h2>Nome do passageiro </h2>
+    <input type="text" name="" id="nome_passageiro_ipt">
+    <h2>Distância da viagem</h2>
+    <input type="text" name="" id="distancia_ipt">
+    <h2>Bandeira da corrida</h2>
+    <input type="text" name="" id="bandeira_ipt">
+    <h2>Hórario da corrida</h2>
+    <input type="text" name="" id="hora_corrida_ipt">
+    <button onclick="calcular()">Calcular a corrida</button>
+    <div id="msg"></div>
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var nome = nome_passageiro_ipt.value
+        var distancia = Number(distancia_ipt.value)
+        var bandeira = Number(bandeira_ipt.value)
+        var hora = Number(hora_corrida_ipt.value)
+        var Totalvalor = 1.25 * distancia
+
+        if(bandeira == 1){
+            if(hora >= 0){
+               if(hora <= 6){
+                msg.innerHTML = `Olá ${nome} sua corrida,sera na bandeira ${bandeira},percorrerá ${distancia}KM e o total da corrida será de ${Totalvalor * 1.05}` 
+               }if(hora >=7){
+                if(hora <= 12){
+                    msg.innerHTML = `Olá ${nome} sua corrida,sera na bandeira ${bandeira},percorrerá ${distancia}KM e o total da corrida será de ${Totalvalor * 1.10}` 
+
+                }
+               }if(hora >= 13){
+                if(hora <= 23){
+                    msg.innerHTML = `Olá ${nome} sua corrida,sera na bandeira ${bandeira},percorrerá ${distancia}KM e o total da corrida será de ${Totalvalor * 1.15}` 
+                }
+               }
+            }
+        }
+
+        if(bandeira == 2){
+            if(hora >= 0){
+               if(hora <= 6){
+                msg.innerHTML = `Olá ${nome} sua corrida,sera na bandeira ${bandeira},percorrerá ${distancia}KM e o total da corrida será de ${Totalvalor * 1.10}` 
+               }if(hora >=7){
+                if(hora <= 12){
+                    msg.innerHTML = `Olá ${nome} sua corrida,sera na bandeira ${bandeira},percorrerá ${distancia}KM e o total da corrida será de ${Totalvalor * 1.20}` 
+
+                }
+               }if(hora >= 13){
+                if(hora <= 23){
+                    msg.innerHTML = `Olá ${nome} sua corrida,sera na bandeira ${bandeira},percorrerá ${distancia}KM e o total da corrida será de ${Totalvalor * 1.30}` 
+                }
+               }
+            }
+        }
+
+
+        if(bandeira == 3){
+            if(hora >= 0){
+               if(hora <= 6){
+                msg.innerHTML = `Olá ${nome} sua corrida,sera na bandeira ${bandeira},percorrerá ${distancia}KM e o total da corrida será de ${Totalvalor * 1.15}` 
+               }if(hora >=7){
+                if(hora <= 12){
+                    msg.innerHTML = `Olá ${nome} sua corrida,sera na bandeira ${bandeira},percorrerá ${distancia}KM e o total da corrida será de ${Totalvalor * 1.30}` 
+
+                }
+               }if(hora >= 13){
+                if(hora <= 23){
+                    msg.innerHTML = `Olá ${nome} sua corrida,sera na bandeira ${bandeira},percorrerá ${distancia}KM e o total da corrida será de ${Totalvalor * 1.45}` 
+                }
+               }
+            }
+        }
+
+
+
+    }
+
+</script>

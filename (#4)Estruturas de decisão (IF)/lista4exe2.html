@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#4)exe2</title>
+</head>
+
+<body>
+    <h2>Quantas latinhas de refrigerante você toma por dia</h2>
+    <input type="text" name="" id="latinhas_ipt">
+    <button onclick="calcular()">Quantos refris?</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+
+<script>
+    function calcular() {
+        var latinhas = Number(latinhas_ipt.value)
+        msg.innerHTML = ""
+        var total = latinhas * 365
+
+        msg.innerHTML = ` <br> <br> <b>Latinhas consumidas por ano: ${total}</b>`
+        if (total >= 500) {
+            msg.innerHTML += `<br> <br> Cuidado com a diabetes `
+
+
+
+        }
+
+
+    }
+
+
+</script>

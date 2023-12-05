@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#4)exe11</title>
+</head>
+
+<body>
+  <h2>  Quantos filhos você tem: </h2>
+   <input type="text" name="" id="filho_ipt"> <br>
+    <button onclick="verificar()">Analíse dos filhotes</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+
+<script>
+
+    function verificar() {
+        var filho = Number(filho_ipt.value)
+        if (filho == 3) {
+            msg.innerHTML = `3 filhos? não tem tv,internet ou videogame ? `
+        } else if (filho == 2) {
+            msg.innerHTML = `2 filhos? não tem  tv ?`
+        } else if (filho == 1) {
+            msg.innerHTML = `1 filho? não tem videogame ?`
+        } else if (filho == 0) {
+            msg.innerHTML = `ai sim, tem tv,internet e videogame !`
+
+        } else if (filho > 3) {
+            msg.innerHTML = ` tem como lema crescer e multiplicavos`
+
+        }
+
+
+
+    }
+
+</script>

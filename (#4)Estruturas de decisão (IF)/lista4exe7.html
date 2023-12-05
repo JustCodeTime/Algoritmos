@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#4)exe7</title>
+</head>
+
+<body>
+    <h2>Qual o saldo em conta</h2>
+    <input type="text" name="" id="saldo_conta_ipt">
+    <h2>Qual o débito</h2>
+    <input type="text" name="" id="debito_conta_ipt">
+    <button onclick="calcular()">Analisar conta </button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var positivo = Number(saldo_conta_ipt.value)
+        var negativo = Number(debito_conta_ipt.value)
+        var total = positivo - negativo
+
+        msg.innerHTML = `O saldo atual na conta corrente é de R$${total}`
+
+        if (total < 0) {
+            msg.innerHTML = `<b style="color: red;">O saldo atual na conta corrente é de R$${total}</b>`
+        }
+
+
+
+
+
+    }
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#4)exe3</title>
+</head>
+
+<body>
+    <h2>Informe a primeira nota</h2>
+    <input type="text" name="" id="nota1_ipt">
+    <h2>Informe a segunda nota</h2>
+    <input type="text" name="" id="nota2_ipt">
+
+    <h2>Informe a terceira nota</h2>
+    <input type="text" name="" id="nota3_ipt">
+
+    <button onclick="calcular()">Analisar desempenho</button>
+    <div id="msg"></div>
+
+</body>
+
+</html>
+
+<script>
+    msg.innerHTML = ""
+    function calcular() {
+        var nota1 = Number(nota1_ipt.value)
+        var nota2 = Number(nota2_ipt.value)
+        var nota3 = Number(nota3_ipt.value)
+        var media  = (nota1 + nota2 + nota3) /3
+            msg.innerHTML = ` <br> <br> Sua média é de ${media}` 
+
+            if(media > 9.4){
+                msg.innerHTML += `<br> <br> Parabéns você é fora de série ` 
+            }
+
+
+    }
+
+
+
+</script>
