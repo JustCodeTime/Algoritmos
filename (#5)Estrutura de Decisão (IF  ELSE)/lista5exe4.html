@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#5)exe4</title>
+</head>
+
+<body>
+    <h2>Frequência em sala </h2>
+    <input type="text" name="" id="analisar_freq">
+    <button onclick="calcular()">Analisar frequência</button>
+    <div id="msg"></div>
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var frequencia = Number(analisar_freq.value);
+        msg.innerHTML = "";
+
+        if (frequencia < 50) {
+            msg.innerHTML = ` <br><br> <br> <img src="https://res.cloudinary.com/compara/image/upload/dpr_1,q_auto,f_auto,c_fill,w_814,h_389/v1687362019/cms/new-uploads/topo-cpa-dia-do-turista-649319e3a21603.57642511.jpg" alt="" width="450px" >`
+
+        } else {
+            msg.innerHTML = ` <br> <br> <br>  <img src="https://blog.redebatista.edu.br/wp-content/uploads/2018/12/edd.jpg" alt="" width="450px">`
+
+
+
+
+        }
+    }
+
+
+</script>

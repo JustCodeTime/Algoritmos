@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#5)exe1</title>
+</head>
+
+<body>
+    <h2>Nome</h2>
+    <input type="text" name="" id="nome_ipt">
+    <h2>Idade</h2>
+    <input type="text" name="" id="idade_ipt">
+    <button onclick="calcular()">Avaliar aluno</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var nome = nome_ipt.value
+        var idade = Number(idade_ipt.value)
+
+    
+        if (idade >= 18) {
+            msg.innerHTML = `${nome} vamos tirar a CNH?`
+
+
+        }else {
+            msg.innerHTML = `${nome} vai jogar playstation!` 
+        }
+
+      
+
+
+
+
+
+    }
+
+
+
+
+</script>

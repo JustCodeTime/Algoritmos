@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#5)exe8</title>
+</head>
+
+<body>
+    <h2>Insira a quantidade de homens</h2>
+    <input type="text" name="" id="homem_ipt">
+    <h2>Insira a quantidade de mulherens</h2>
+    <input type="text" name="" id="mulher_ipt">
+    <button onclick="calcular()">Ligar elevador</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var homem = Number(homem_ipt.value) * 90
+        var mulher = Number(mulher_ipt.value) * 70
+        var total = mulher + homem
+
+        if (total <= 500) {
+            msg.innerHTML = ` <b style ="color:green"> Elevador vai se mover pois está com ${total}kg`
+        }else{
+            msg.innerHTML = ` <b style ="color:red"> Elevador vai se mover pois está com ${total}kg`
+
+            
+        }
+
+
+    }
+
+
+
+</script>

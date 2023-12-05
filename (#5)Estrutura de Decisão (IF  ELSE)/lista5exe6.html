@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#5)exe6</title>
+</head>
+
+<body>
+    <h2>Insira a temperatura</h2>
+    <input type="text" name="" id="temperatura_ipt">
+    <button onclick="calcular()">Verificar clima</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var temperatura = Number(temperatura_ipt.value)
+
+        if (temperatura < 10) {
+        msg.innerHTML= ` <br> <br> <img src="https://empeaconsultoria.com.br/wp-content/uploads/2019/03/ok-1024x640.jpg" alt="" width="300px">`     
+        } else {
+
+            msg.innerHTML= ` <br> <br> <img src="https://www.otempo.com.br/image/contentid/policy:1.2674461:1653572266/casserole-2386835-1920-jpg.jpg?f=3x2&w=1224" alt="" width="300px">`
+
+
+        }
+
+
+
+}
+
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#5)exe3</title>
+</head>
+
+<body>
+    <h2>Quantidade de chocoloate comprado</h2>
+    <input type="text" name="" id="compra_chocolate_ipt">
+    <button onclick="calcular()">Compra</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var compra = Number(compra_chocolate_ipt.value);
+
+        if (compra > 12) {
+            compra = compra * 2.50;
+            msg.innerHTML = `Valor da sua compra foi de ${compra}`
+        } else {
+            compra = compra * 3.00;
+            msg.innerHTML = `Valor da sua compra foi de ${compra}`
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+</script>
