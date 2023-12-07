@@ -1,0 +1,63 @@
+Trilha de Estudos sobre JavaScript
+
+1. Introdução ao JavaScript
+Neste primeiro módulo, você será introduzido ao universo do JavaScript. Aprenderá os conceitos básicos da linguagem, sua sintaxe e como incorporá-la em páginas web. Serão abordados tópicos como variáveis, tipos de dados e estruturas básicas de controle de fluxo.
+
+2. innerHTML e Operações Aritméticas
+No segundo módulo, aprofundaremos os conhecimentos, concentrando-nos em manipular o conteúdo HTML com o innerHTML. Além disso, exploraremos as operações aritméticas em JavaScript para realizar cálculos e manipulações numéricas. 
+
+3. Estruturas de Controle: If
+No terceiro módulo, daremos um passo adiante no controle de fluxo, concentrando-nos na estrutura condicional if. Você aprenderá como utilizar o if para criar decisões simples em seu código.
+
+4. Estruturas de Controle: If e Else
+O quarto módulo expandirá suas habilidades ao introduzir o conceito de else. Com isso, você poderá lidar com cenários alternativos, melhorando a lógica do seu código.
+
+5. Estruturas de Controle: If, Else e Else If
+No quinto módulo, abordaremos situações mais complexas usando if, else, e else if. Isso permitirá lidar com múltiplas condições de forma eficiente e estruturada.
+
+6. Operador Lógico AND
+No sexto módulo, exploraremos o operador lógico and em JavaScript. Você entenderá como combinar condições usando este operador para criar lógica mais avançada em suas estruturas condicionais.
+
+Esta trilha de estudos foi projetada para proporcionar uma compreensão gradual e abrangente do JavaScript, começando pelos conceitos fundamentais e progredindo para estruturas de controle mais avançadas. Ao concluir esta trilha, você estará mais capacitado para desenvolver aplicações web dinâmicas e interativas usando JavaScript.
+
+			!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DICA DE QUEM PEGOU A MATÉRIA NA UNHA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Bom, se eu dissesse que foi fácil elevar o meu nível técnico até dominar todos os conceitos acima, estaria mentindo. No entanto, tudo na vida requer prática. Então, aqui vai a maior dica que eu poderia te dar: encare a linguagem JavaScript como uma língua. Se imagine aprendendo um novo idioma e, quando você dominar a linguagem ou começar a entender o mínimo possível, não haverá enunciado que te cause medo. Um exemplo da "codificação da linguagem": eu quero que você verifique se o usuário tem 1,80m ou mais de altura. Plote uma mensagem para ele: "Você é alto". Se não, exiba um alerta que diz: "baixinho".
+Agora, decodificando e encarando a linguagem como uma língua, o enunciado não te pede nada mais, nada menos do que:
+
+se"IF"(altura >="maior ou igual" 1.80){
+mensagem.innerHTML = "Você é altinho" //ps: mais pra frente eu mostro pra vocês o que é interpolação//
+} se não "ELSE"{ //ps: não há parametros para o else pois ele representa o completo oposto da condição parametrada no if.// ps²: parametro é a condição dentro dos parenteses (explicado à grossimo modo)
+alertt("baixinho)
+}
+
+
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LEGENDA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*innerHTML: (innerHTML é uma propriedade em JavaScript que permite a manipulação do conteúdo HTML de um elemento, possibilitando a atualização dinâmica do texto e da estrutura dentro desse elemento em uma página web.) //ps: Sempre,sempre e sempre escreva a sintaxe desse código da maneira que está descrito ao longo de todo documneto "innerHTML"//
+
+
+*Operadores de comparação:
+No JavaScript, os sinais de menor (<) e maior (>) são operadores de comparação. Esses operadores são usados para comparar dois valores e retornam um valor booleano, indicando se a condição é verdadeira ou falsa. 
+
+
+*Operações aritiméticas:Bom aqui basicamente você reforça um pouco de tudo que aprendeu na escola (matemática básica com um pouquinho de lógica)
+para que você não de um tiro no escuro aqui estão os operadores aritiméticos:
+
+Adição (+): Soma dois valores.
+Subtração (-): Subtrai o valor à direita do valor à esquerda.
+Multiplicação (*): Multiplica dois valores.
+Divisão (/): Divide o valor à esquerda pelo valor à direita.
+Módulo (%): Retorna o resto da divisão do valor à esquerda pelo valor à direita. (O que é mais complicadinho de entender mas uma vez entendido já era) //ps: a titúlo de curiosidade o sinal para elevação é (**)) //
+Incremento (++) e Decremento (--): Adiciona ou subtrai 1 do valor de uma variável, respectivamente.
+
+*IF (ou "se" para os mais chegados): O if é uma estrutura condicional em programação que executa um bloco de código se uma condição especificada for avaliada como verdadeira.
+
+*ELSE (ou "se não" para os mais íntimos): O else é uma extensão da estrutura if em programação. Ele permite a execução de um bloco de código alternativo quando a condição do if não é verdadeira. Em outras palavras, se a condição do if não for atendida, o bloco de código associado ao else será executado. Isso oferece a capacidade de lidar com casos alternativos ou fornecer uma ação padrão quando a condição inicial não é satisfeita. //ps: ou seja se o if não for satisfeito e você precisa alertar o usuário disso,o else entra em ação.//  // ps²: prometo que vai fazer sentido quando você for por a mão na massa// 
+
+*ELSE IF: O else if é uma extensão adicional à estrutura condicional if em programação. Permite avaliar condições adicionais quando a condição inicial do if não é verdadeira. Se a primeira condição não for atendida, o código associado ao primeiro else if será verificado e, se essa condição for verdadeira, o bloco de código correspondente será executado. Essa sequência pode ser estendida com múltiplos else if para lidar com várias condições alternativas, proporcionando uma lógica mais elaborada de decisões no código.
+
+*AND (&&): 
+O operador lógico and em JavaScript, representado por &&, é utilizado para combinar duas ou mais condições. Ele retorna verdadeiro (true) apenas se todas as condições especificadas forem verdadeiras. Se pelo menos uma das condições for falsa, o resultado será falso (false). O operador and é fundamental em expressões condicionais mais complexas, permitindo a avaliação de múltiplas condições simultaneamente. //ps: aqui vai um exemplo,você se depara com o desafio de validar SE(if) a idade de um jovem é suficinte para uma festa E(&&) se os pais do mesmo o autoriza. Ele serve para basicamente isso.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!! O TEMPO NÃO TEM SIDO MEU AMIGO ATÉ AQUI ESTOU CHEIO DE COISAS NO PROJETO EM GRUPO E INDIVIDUAL, CORRENDO ATRÁS DA EVOLUÇÃO TECNICA PRA IR PRO PROXIMO SEMESTRE 100% PRONTO PRA TRABALHAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	então por hora a trilha é finalizada do módulo 6 prometo voltar o mais breve o possível,precisando é só chamar: eduardo.moliveira@sptech.school
