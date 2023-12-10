@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#8)exe6</title>
+</head>
+
+<body>
+            <h1>Meios de transporte</h1>
+    <select name="" id="Meios_de_transporte_ipt">
+        <option value="Ônibus">Ônibus</option>
+        <option value="Metrô">Metrô</option>
+        <option value="Carro">Carro</option>
+        <option value="Bicicleta">Bicicleta</option>
+        <option value="Lotação">Lotação</option>
+    </select>
+
+    <button onclick="validar()">Calcular cansaço</button>
+</body>
+
+</html>
+
+<script>
+function validar(){
+var meiosDeTransporte = Meios_de_transporte_ipt.value
+
+if(meiosDeTransporte == "Carro" || meiosDeTransporte == "Bicicleta"){
+
+    alert("Ta tranquilo")
+
+} else if (meiosDeTransporte == "Metrô"){
+    alert("Um pouco cansado")
+
+}else{
+    alert("Vish... vive cansado")
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+</script>

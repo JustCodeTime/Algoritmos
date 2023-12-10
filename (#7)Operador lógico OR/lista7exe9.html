@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#8)exe9</title>
+</head>
+
+<body>
+    <select name="" id="modelo_tv_ipt">
+        <option value="Samsung">Samsung</option>
+        <option value="LG">LG</option>
+        <option value="Mondial">Mondial</option>
+        <option value="Britânia">Britânia</option>
+    </select>
+    <br> <br> <br> <input type="text" name="" id="preco_tv_ipt">
+
+    <button onclick="validar()">Analisar compra</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+
+<script>
+    function validar() {
+        var modelotv = modelo_tv_ipt.value
+        var valor = Number(preco_tv_ipt.value)
+        console.log(modelotv)
+
+        if (valor < 800 || valor > 2000) {
+            msg.innerHTML = `TV fora da faixa de preço`
+            if (valor < 800) {
+                msg.innerHTML = `Preço baixo demais!`
+            } else if (valor < 2000) {
+                msg.innerHTML = `TV cara demais, infelizmente `
+
+            }
+        }
+        else if ((valor >= 800 || valor <= 2000) && (modelotv == "Mondial" || modelotv == "Britânia")) {
+            msg.innerHTML = `Na faixa de preço, porém de marca não confiável`
+        } 
+         else{
+            msg.innerHTML = `Essa TV pode entrar na sua lista!`
+        }
+
+    } 
+    
+    // na maioria das condições que exigem dois operadores lógicos utilize parenteses para validar quais condições você quer que o programa verifique primeiro
+
+
+
+</script>

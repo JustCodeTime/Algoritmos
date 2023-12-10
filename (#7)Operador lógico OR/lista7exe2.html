@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#8)exe2</title>
+</head>
+
+<body>
+    Sua nota no ENEM: <input type="text" name="" id="nota_enem_ipt"> <br> <br>
+    Sua nota no Vestibular interno: <input type="text" name="" id="nota_vestibular_interno_ipt"> <br>
+
+    <button onclick="validar()">Avaliação</button>
+
+</body>
+
+</html>
+
+<script>
+    function validar() {
+        var notaEnem = Number(nota_enem_ipt.value)
+        var notaVestibularInterno = Number(nota_vestibular_interno_ipt.value)
+
+        console.log(notaEnem)
+
+        if (notaEnem >= 800 || notaVestibularInterno >= 700) {
+
+           alert("Parabéns! Aprovado")
+
+        } else {
+
+             alert("Tente semestre que vem")
+
+        }
+
+
+
+
+    }
+
+
+
+</script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#8)exe5</title>
+</head>
+
+<body>
+    Qual a temperatura: <input type="text" name="" id="temperatura_ipt">
+    <button onclick="validar()">Analisar temperatura</button>
+</body>
+
+</html>
+<script>
+    function validar() {
+        var temperatura = Number(temperatura_ipt.value)
+
+        if (temperatura < 21 || temperatura > 24) {
+            alert("Alerta de desconforto!")
+
+            if (temperatura < 21) {
+
+                alert("As pessoas vão ter hiportermia")
+            } else if (temperatura > 24){
+
+                alert("As pessoa vão derreter")
+            }
+}
+
+
+
+
+
+
+
+    }
+
+
+
+
+</script>

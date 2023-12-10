@@ -178,7 +178,8 @@ e) Ao clicar em "Calcular corrida", informe ao passageiro o valor final da corri
 
 Obs: O valor nominal da corrida é de R$ 1,25 por km;
 
-Bandeira 1	0h - 6h	5%
+Bandeira 1	
+0h - 6h	       5%
 7h - 12h	10%
 13h - 23h	15%
 Bandeira 2	0h - 6h	10%

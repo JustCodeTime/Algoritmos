@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#8)exe8</title>
+</head>
+
+<body>
+
+    Nome da empresa: <input type="text" name="" id="nome_empresa_ipt"> <br>
+    <br> Valor da bolsa da empresa: <input type="text" name="" id="valor_bolsa_ipt"> <br>
+    <br> Valor do VR da empresa: <input type="text" name="" id="valor_vr_ipt"> <br>
+    <br> Tempo de deslocamento: <input type="text" name="" id="tempo_ipt"> <br>
+    <br> <br><button onclick="validar()">É preferida?</button>
+    <div id="msg"></div>
+</body>
+
+</html>
+
+
+<script>
+    function validar() {
+        var nome = nome_empresa_ipt.value
+        var valorSalario = Number(valor_bolsa_ipt.value)
+        var valorValeRefeição = Number(valor_vr_ipt.value)
+        var deslocamento = Number(tempo_ipt.value)
+
+        if (valorSalario >= 1800 || valorValeRefeição >= 20 || deslocamento <= 30) {
+
+                msg.innerHTML = `A empresa ${nome} de suas preferências`
+
+
+
+
+        }else{
+            msg.innerHTML =  `A emprea ${nome} está fora da sua lista` 
+        
+        } 
+
+
+    }
+
+
+
+
+
+</script>

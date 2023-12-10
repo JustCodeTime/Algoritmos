@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista(#8)exe3</title>
+</head>
+
+<body>
+    Qual sua renda individual: <input type="text" name="" id="renda_individual_ipt"> <br>
+    Qual o valor da sua renda familiar: <input type="text" name="" id="renda_familiar_ipt"> <br>
+    <button onclick="validar()">Terei o benefício</button>
+    <div id="msg"></div>
+
+</body>
+
+</html>
+
+<script>
+    function validar() {
+        var rendaIndividual = Number(renda_individual_ipt.value)
+        var rendaFamiliar = Number(renda_familiar_ipt.value)
+
+
+        if (rendaIndividual <= 2000 || rendaFamiliar < 3000) {
+            msg.innerHTML = `Você tem direito ao auxílio `
+
+
+
+
+
+
+
+        } else {
+            msg.innerHTML = "Sem direito ao auxílio"
+        }
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+</script>
